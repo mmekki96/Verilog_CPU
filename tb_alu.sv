@@ -18,12 +18,20 @@ alu UUT (
 		$dumpfile("alu.vcd");
 		$dumpvars(0, tb_alu);
 
-		in1_tb = 4'b0100; in2_tb = 4'b1001; 
-		sel_tb = 3'b000; #10;
-		sel_tb = 3'b010; #10;
-		sel_tb = 3'b001; #10;
-		sel_tb = 3'b100; #10;
-		sel_tb = 3'b011; #10;
+		in1_tb = 4'b0000; in2_tb = 4'b0000; 
+		in1_tb = 4'b0100; in2_tb = 4'b1001; sel_tb = 3'b000; #10;
+		$display("Time=%0t: Add %b + %b = %b", $time, in1_tb, in2_tb, out_tb);
+		in1_tb = 4'b1001; in2_tb = 4'b0001; sel_tb = 3'b001; #10;
+		$display("Time=%0t: Substract %b - %b = %b", $time, in1_tb, in2_tb, out_tb);
+		in1_tb = 4'b1010; in2_tb = 4'b1001; sel_tb = 3'b010; #10;
+		$display("Time=%0t: And gate %b And %b = %b", $time, in1_tb, in2_tb, out_tb);
+		in1_tb = 4'b0100; in2_tb = 4'b0101; sel_tb = 3'b011; #10;
+		$display("Time=%0t: Or gate %b Or %b = %b", $time, in1_tb, in2_tb, out_tb);
+		in1_tb = 4'b0110; in2_tb = 4'b0101; sel_tb = 3'b100; #10;
+		$display("Time=%0t: Xor gate %b Xor %b = %b", $time, in1_tb, in2_tb, out_tb);
+		in1_tb = 4'b0110; in2_tb = 4'b1001; sel_tb = 3'b101; #10;
+		$display("Time=%0t: Not gate of %b = %b", $time, in1_tb, out_tb);
+		#10;
 
 		$finish;
 	end

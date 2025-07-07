@@ -12,6 +12,7 @@ module alu (
 			3'b010 : out = in1 & in2;
 			3'b011 : out = in1 | in2;
 			3'b100 : out = in1 ^ in2;
+			3'b101 : out = ~in1;
 			default : out = 4'bXXXX;
 		endcase
 	end
