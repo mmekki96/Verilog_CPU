@@ -36,7 +36,7 @@ pc UUT (
         rst_tb = 1'b0; // (Enable asynchronous reset)
         $display("%0t\t%b\t%b\t%b\t%b\t%b", $time, clk_tb, rst_tb, enb_tb, in_tb, out_tb);
         #10;
-        rst_tb = 1'b1; // (Diable reset)
+        rst_tb = 1'b1; // (Disable reset)
         $display("%0t\t%b\t%b\t%b\t%b\t%b", $time, clk_tb, rst_tb, enb_tb, in_tb, out_tb);
         
 
