@@ -1,0 +1,118 @@
+$date
+	Mon Jul  7 18:19:03 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_pc $end
+$var wire 4 ! out_tb [3:0] $end
+$var reg 1 " clk_tb $end
+$var reg 1 # enb_tb $end
+$var reg 4 $ in_tb [3:0] $end
+$var reg 1 % rst_tb $end
+$scope module UUT $end
+$var wire 1 " pc_clk $end
+$var wire 1 # pc_enb $end
+$var wire 4 & pc_in [3:0] $end
+$var wire 1 % pc_rst $end
+$var reg 4 ' pc_out [3:0] $end
+$var reg 4 ( store [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx (
+bx '
+b1111 &
+1%
+b1111 $
+0#
+0"
+bx !
+$end
+#1000
+b0 (
+0%
+#5000
+b0 !
+b0 '
+1"
+#10000
+0"
+#11000
+1%
+#15000
+b1 (
+1"
+#20000
+0"
+#25000
+b1 !
+b1 '
+b10 (
+1"
+#30000
+0"
+#35000
+b10 !
+b10 '
+b11 (
+1"
+#40000
+0"
+#45000
+b11 !
+b11 '
+b100 (
+1"
+#46000
+1#
+b1100 $
+b1100 &
+#50000
+0"
+#55000
+b100 !
+b100 '
+b1100 (
+1"
+#60000
+0"
+#65000
+b1100 !
+b1100 '
+1"
+#66000
+0#
+b1111 $
+b1111 &
+#70000
+0"
+#75000
+b1101 (
+1"
+#80000
+0"
+#85000
+b1101 !
+b1101 '
+b1110 (
+1"
+#86000
+b1110 !
+b1110 '
+b0 (
+0%
+#90000
+0"
+#95000
+b0 !
+b0 '
+1"
