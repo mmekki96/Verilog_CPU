@@ -1,0 +1,88 @@
+$date
+	Mon Jul  7 15:21:06 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_register $end
+$var wire 4 ! out_tb [3:0] $end
+$var reg 1 " clk_tb $end
+$var reg 1 # enb_tb $end
+$var reg 4 $ in_tb [3:0] $end
+$scope module UUT $end
+$var wire 1 " r_clk $end
+$var wire 1 # r_enb $end
+$var wire 4 % r_in [3:0] $end
+$var reg 4 & r_out [3:0] $end
+$var reg 4 ' r_str [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx '
+bx &
+b0 %
+b0 $
+0#
+0"
+bx !
+$end
+#5000
+1"
+#10000
+0"
+1#
+b1010 $
+b1010 %
+#15000
+b1010 '
+1"
+#20000
+0"
+#25000
+b1010 !
+b1010 &
+1"
+#30000
+0"
+0#
+b110 $
+b110 %
+#35000
+1"
+#40000
+0"
+#45000
+1"
+#50000
+0"
+1#
+b11 $
+b11 %
+#55000
+b11 '
+1"
+#60000
+0"
+#65000
+b11 !
+b11 &
+1"
+#70000
+0"
+b1111 $
+b1111 %
+0#
+#75000
+1"
+b0 $
+b0 %
+#80000
+0"
