@@ -1,7 +1,6 @@
 module rom (
 	input [3:0] rom_addr,
-	output reg [3:0] rom_opcode,
-	output reg [3:0] rom_operand
+	output reg [7:0] rom_out
 	);
 
 	reg [7:0] rom_prog [15:0];
@@ -24,12 +23,9 @@ module rom (
 		rom_prog[14] = 8'h00;
 		rom_prog[15] = 8'h00;
 	end
-
-	always @* begin
-		rom_opcode = rom_prog[rom_addr][7:4];
-		rom_operand = rom_prog[rom_addr][3:0];
-	end
-
+    always @(*) begin
+        rom_out = rom_prog[rom_addr];
+    end
 	endmodule
 		
 
